@@ -220,8 +220,8 @@ img {
 }
 .navBar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   margin-top: 4%;
   margin-bottom: 4%;
   border: 2px solid darkgoldenrod;
@@ -229,18 +229,21 @@ img {
 }
 @media (max-width: 800px) {
   .navBar {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
     width: 100%;
   }
 }
-.navBar nav {
-  display: flex;
+.navBar nav a:hover {
+  color: darkgoldenrod;
 }
 @media (max-width: 800px) {
   .navBar nav {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 11px 0px 20px 0px;
   }
@@ -339,7 +342,7 @@ body {
   }
 }
 .home header .headerText .headline {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: bold;
   color: black;
 }
@@ -354,7 +357,7 @@ body {
   }
 }
 .home header .headerText .sub-headline {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: black;
 }
@@ -388,9 +391,11 @@ body {
 }
 .home .sect-topNine .middle-content .topNine {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 2%;
   margin-bottom: 5%;
-  flex-wrap: wrap;
   color: black;
 }
 @media (max-width: 800px) {
@@ -445,9 +450,11 @@ body {
 .home .sect-features .feature-content {
   border-radius: 8px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 2%;
   margin-bottom: 5%;
-  flex-wrap: wrap;
   color: black;
 }
 @media (max-width: 800px) {
@@ -545,7 +552,7 @@ body {
   }
 }
 .about header .headerText .headline {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: bold;
   color: black;
 }
@@ -560,9 +567,10 @@ body {
   }
 }
 .about header .headerText .sub-headline {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: black;
+  text-shadow: 4px 4px 2px #969696;
 }
 @media (max-width: 800px) {
   .about header .headerText .sub-headline {
@@ -583,17 +591,25 @@ body {
 }
 .about .title h2 {
   padding-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 @media (max-width: 500px) {
   .about .title {
     text-align: center;
   }
 }
+.about .title2 {
+  margin-top: 8%;
+}
+.about .title3 {
+  margin-top: 8%;
+}
 .about .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   .about .content-section {
@@ -603,6 +619,10 @@ body {
 .about .content-section .text-content {
   width: 62%;
   padding-right: 1%;
+}
+.about .content-section .text-content h2 {
+  text-decoration: underline;
+  color: darkgoldenrod;
 }
 @media (max-width: 500px) {
   .about .content-section .text-content {

@@ -65,7 +65,7 @@ body {
         }
 
         .headline {
-          font-size: 4rem;
+          font-size: 4.5rem;
           font-weight: bold;
           color: @font-color;
       
@@ -80,7 +80,7 @@ body {
         } //.headline
 
         .sub-headline {
-          font-size: 2.3rem;
+          font-size: 2.5rem;
           font-weight: bold;
           color: @font-color;
       
@@ -124,10 +124,10 @@ body {
       margin-bottom: 5%;
 
       .topNine {       
-        display: flex;
-        margin-top: 2%;
-        margin-bottom: 5%;
+        .flex-layout(space-between, center);
         flex-wrap: wrap;
+        margin-top: 2%;
+        margin-bottom: 5%;      
         color: @font-color;
 
         @media @tablet {           
@@ -196,10 +196,10 @@ body {
       border-radius: 8px;
       margin-bottom: 5%;
 
-      display: flex;
-      margin-top: 2%;
-      margin-bottom: 5%;
+      .flex-layout(space-between, center);
       flex-wrap: wrap;
+      margin-top: 2%;
+      margin-bottom: 5%;     
       color: @font-color;
 
       @media @tablet {           
