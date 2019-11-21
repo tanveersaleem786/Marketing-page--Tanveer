@@ -345,6 +345,7 @@ body {
   font-size: 4.5rem;
   font-weight: bold;
   color: black;
+  text-shadow: 0 0 3px white;
 }
 @media (max-width: 800px) {
   .home header .headerText .headline {
@@ -360,6 +361,7 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   color: black;
+  text-shadow: 0 0 3px white;
 }
 @media (max-width: 800px) {
   .home header .headerText .sub-headline {
@@ -475,6 +477,12 @@ body {
     height: auto;
   }
 }
+@media (max-width: 800px) {
+  .home .sect-features .feature-content img {
+    max-width: 50%;
+    height: auto;
+  }
+}
 .home .sect-features .feature-content div {
   width: 27%;
   margin: auto;
@@ -484,14 +492,17 @@ body {
   text-align: center;
   height: auto;
 }
+.home .sect-features .feature-content div p:nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 .home .sect-features .feature-content div span {
   font-size: 2.5rem;
   font-weight: bold;
 }
-.home .sect-features .feature-content div p {
+.home .sect-features .feature-content div p:nth-child(3) {
   line-height: 1.5;
   font-size: 2rem;
-  padding-top: 19px;
 }
 @media (max-width: 800px) {
   .home .sect-features .feature-content div {
@@ -554,7 +565,8 @@ body {
 .about header .headerText .headline {
   font-size: 4.5rem;
   font-weight: bold;
-  color: black;
+  color: white;
+  text-shadow: 0 0 3px #FF0000;
 }
 @media (max-width: 800px) {
   .about header .headerText .headline {
@@ -569,8 +581,8 @@ body {
 .about header .headerText .sub-headline {
   font-size: 2.5rem;
   font-weight: bold;
-  color: black;
-  text-shadow: 4px 4px 2px #969696;
+  color: white;
+  text-shadow: 0 0 3px #FF0000;
 }
 @media (max-width: 800px) {
   .about header .headerText .sub-headline {
